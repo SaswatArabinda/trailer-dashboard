@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    line-height: 1.7;
+    transition: all .2s;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.hide{
+  display: none;
+}
+
+span.applied-filter-text {
+    float: left;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.applied-filter {
+  /* border: solid 1px; */
+  min-height: 20px;
+}
+
+
+/* .grid.hasSelectedItem .grid-list:not(.selectedItem) {
+  opacity: .2;
+} */

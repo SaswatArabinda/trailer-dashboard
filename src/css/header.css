@@ -1,0 +1,52 @@
+.nav-bar {
+    osition: relative;
+    top: 0;
+    left: 0;
+    z-index: 198;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    margin: 0 -8px;
+    display: block;
+    zoom: 1;
+    min-width: 1000px;
+    background-color: #232f3e;
+    box-sizing: border-box;
+    display: block;
+}
+.nav-belt {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    z-index: 5;
+    background-color: #232f3e;
+    overflow: hidden;
+}
+ .nav-belt .nav-left, .nav-belt .nav-right,  .navbar .nav-belt .nav-left, .navbar .nav-belt .nav-right {
+    height: 39px;
+}
+
+.nav-right {
+    position: relative;
+    float: right;
+    width: auto;
+    display: inline-block;
+    padding: 2px 40px;
+
+}
+.nav-left {
+    position: relative;
+    /* float: right; */
+    width: auto;
+    padding: 20px;
+    display: inline-block;
+}
+
+.nav-right > div {
+    display: inline-block;
+    padding-right: 20px;
+    /* width: 206px; */
+}
+.nav-right > div button{
+    width: 200px !important;
+}
