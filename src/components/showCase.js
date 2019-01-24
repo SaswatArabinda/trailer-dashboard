@@ -1,9 +1,20 @@
 import React, { Component } from "react";
 import CreateTags from './createTags';
+import {store} from '../store/index';
+import {displayShowCase} from '../actions/index';
+
 import '../css/showCase.css';
 
 
 class ShowCase extends Component {
+    dispatchAction(e) {
+        
+        let param = {
+            activeIndex: -1
+
+        }
+        store.dispatch(displayShowCase(param));
+    }
     render() {
         let { hideShowCase, TrailerURL, EventTitle, EventLanguage, EventGenre, wtsCount, ShowDate, wtsPerc } = this.props;
 
@@ -17,7 +28,7 @@ class ShowCase extends Component {
             <div className="grid-show" >
                 <div className="grid-padding">
                     <div className="grid-navigation">
-                        <a href="#" className="fa fa-times grid-close" onClick={hideShowCase}></a>
+                        <a href="#" className="fa fa-times grid-close" onClick={this.dispatchAction}></a>
                     </div>
                     <div className="grid-expanded-content">
                         <div className="row">
